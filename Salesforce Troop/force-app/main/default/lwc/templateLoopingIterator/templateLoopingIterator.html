@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Iterator loop demo" icon-name="custom:custom14"></lightning-card>
+    <ul class="slds-m-around_medium">
+        <div class="list-group-inline">
+            <template iterator:ceo={ceoList}>
+                <div key={ceo.value.id}>
+                    <i if:true={ceo.first} class="list-group-item list-group-item-action header"><strong>List of
+                            companies and their CEO´s :</strong>
+                    </i>
+                    <i class="list-group-item list-group-item-action"><strong>{ceo.value.company} :
+                        </strong> {ceo.value.name}
+                    </i>
+                    <i if:true={ceo.last} class="list-group-item list-group-item-action footer"><strong>&copy; 2019
+                            Lightning school salesforce </strong>
+
+                    </i>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </ul>
+
+</template>
