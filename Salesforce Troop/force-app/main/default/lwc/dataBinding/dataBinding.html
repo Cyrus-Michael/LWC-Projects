@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Two way Data Binding" icon-name="custom:custom2">
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" 
+            name="title" label="Enter your name" 
+            value={title} 
+            onkeyup={changeController}>
+
+            </lightning-input>
+
+        </div>
+    </lightning-card>
+    <div class="slds-p-around_medium">
+
+    </div>
+    <lightning-card title="Two way data binding" icon-name="custom:custom1">
+        <div class="slds-p-around_medium">
+            <p>Right now I´m learning Lightning Web Components {title}</p>
+        </div>
+    </lightning-card>
+    
+</template>
