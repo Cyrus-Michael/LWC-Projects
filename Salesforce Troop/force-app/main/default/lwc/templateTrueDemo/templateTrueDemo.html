@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="if:true demo template" icon-name="custom:custom17">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={showController}>Click me to show the text</button>
+            <button class="slds-button slds-button_success" onclick={hiddeController}>Click me to hidde the text</button>
+            <template if:true={showText}>
+                <h3>Hello! I´m learning Lightning Web Component</h3>
+            </template>
+            <template if:true={hiddeText}>
+                <h1>Hello! I´m learning Lightning Web Component</h1>
+            </template>
+
+        </div>
+    </lightning-card>
+
+
+</template>
